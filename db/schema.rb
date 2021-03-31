@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20160625062916) do
     t.datetime "updated_at",        null: false
   end
 
-  add_index "line_items", ["order_id"], name: "index_line_items_on_order_id", using: :btree
+  add_index "line_items", ["order_id"], name: "index_line_items_on_order_id", using: :btreem
   add_index "line_items", ["product_id"], name: "index_line_items_on_product_id", using: :btree
 
   create_table "orders", force: :cascade do |t|
